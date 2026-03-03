@@ -1,0 +1,24 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local MLflow database (should not be in version control)
+mlflow.db
+mlruns/
+mlartifacts/
+
+# Optional local model mirror (we only care about the S3 version)
+06-cicd/artifacts/model/
+
+# Secrets file (if you ever use one)
+.env
+
+# IDE / OS specific
+.vscode/
+.idea/
+*.DS_Store
+.pytest_cache/
